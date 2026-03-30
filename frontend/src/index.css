@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* ── Custom Design Tokens ── */
+:root {
+  --clr-bg: #0f1117;
+  --clr-surface: #1a1d27;
+  --clr-surface-2: #242836;
+  --clr-border: #2e3348;
+  --clr-text: #e4e6f0;
+  --clr-text-muted: #8b8fa8;
+  --clr-primary: #6366f1;
+  --clr-primary-light: #818cf8;
+  --clr-danger: #ef4444;
+  --clr-warning: #f59e0b;
+  --clr-success: #22c55e;
+  --clr-info: #3b82f6;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Leaflet overrides */
+.leaflet-container { background: #0f1117; }
+.leaflet-popup-content-wrapper {
+  background: var(--clr-surface) !important;
+  color: var(--clr-text) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,.4) !important;
+}
+.leaflet-popup-tip { background: var(--clr-surface) !important; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--clr-bg); }
+::-webkit-scrollbar-thumb { background: var(--clr-border); border-radius: 3px; }
+
+/* Recharts tooltip */
+.recharts-default-tooltip {
+  background: var(--clr-surface) !important;
+  border: 1px solid var(--clr-border) !important;
+  border-radius: 8px !important;
+}
