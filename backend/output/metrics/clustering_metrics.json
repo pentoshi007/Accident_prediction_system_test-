@@ -1,0 +1,12 @@
+{
+  "algorithm": "DBSCAN",
+  "eps_radians": 0.045,
+  "eps_km": 286.69,
+  "min_samples": 15,
+  "metric": "haversine",
+  "n_clusters": 9,
+  "n_noise_points": 0,
+  "n_clustered_points": 12316,
+  "noise_ratio": 0.0,
+  "clustered_ratio": 1.0
+}

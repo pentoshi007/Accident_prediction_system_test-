@@ -1,0 +1,129 @@
+{
+  "title": "AI-Based Accident Hotspot Prediction System Using DBSCAN and Random Forest",
+  "dataset": {
+    "name": "Road Accident Severity in India",
+    "source": "Kaggle (s3programmer/road-accident-severity-in-india)",
+    "total_records": 12316,
+    "target_variable": "Accident_severity (Slight/Serious/Fatal)",
+    "features_used": 17
+  },
+  "methodology": {
+    "preprocessing": "Geocoding, temporal feature engineering, label encoding (15 categoricals)",
+    "clustering": {
+      "algorithm": "DBSCAN with haversine distance",
+      "parameters": "eps=0.045 rad (~286.7 km), min_samples=15",
+      "clusters_found": 9,
+      "noise_ratio": 0.0
+    },
+    "classification": {
+      "algorithm": "Random Forest Classifier",
+      "parameters": "n_estimators=200, max_depth=20, class_weight=balanced",
+      "features": 17,
+      "includes_cluster_id": "Yes (spatially-aware model)"
+    },
+    "risk_index": {
+      "formula": "ARI = W1*Severity + W2*Density + W3*Environment",
+      "weights": {
+        "W1_severity": 0.534,
+        "W2_density": 0.4009,
+        "W3_environment": 0.0651
+      }
+    }
+  },
+  "results": {
+    "classification_performance": {
+      "accuracy": 0.8466,
+      "train_accuracy": 1.0,
+      "precision_macro": 0.4908,
+      "precision_weighted": 0.8052,
+      "recall_macro": 0.3376,
+      "recall_weighted": 0.8466,
+      "f1_macro": 0.3149,
+      "f1_weighted": 0.7793,
+      "cohen_kappa": 0.0198,
+      "matthews_corr_coef": 0.0749,
+      "log_loss": 0.4471
+    },
+    "cross_validation": {
+      "accuracy_mean": 0.8476,
+      "accuracy_std": 0.001,
+      "accuracy_per_fold": [
+        0.8466,
+        0.8486,
+        0.849,
+        0.8473,
+        0.8465
+      ],
+      "f1_macro_mean": 0.3251,
+      "f1_macro_std": 0.0112,
+      "f1_per_fold": [
+        0.315,
+        0.3208,
+        0.3417,
+        0.3133,
+        0.3345
+      ],
+      "precision_macro_mean": 0.6511,
+      "precision_macro_std": 0.1418,
+      "recall_macro_mean": 0.343,
+      "recall_macro_std": 0.0057
+    },
+    "top_5_features": {
+      "Hour": 0.1359,
+      "Cause_of_accident_Enc": 0.1027,
+      "DayOfWeek": 0.0983,
+      "Type_of_vehicle_Enc": 0.0927,
+      "Driving_experience_Enc": 0.0773
+    },
+    "ari_risk_distribution": {
+      "Low": 5,
+      "Severe": 2,
+      "Moderate": 2
+    }
+  },
+  "figures": {
+    "fig1": "Severity Distribution (bar + pie)",
+    "fig2": "Severity x Weather Heatmap",
+    "fig3": "DBSCAN Cluster Scatter Plot",
+    "fig4": "Normalized Confusion Matrix",
+    "fig5": "Feature Importances",
+    "fig6": "ROC Curves (One-vs-Rest)",
+    "fig7": "Learning Curve",
+    "fig8": "Accident Risk Map (ARI)",
+    "fig9": "Model Comparison"
+  },
+  "output_files": {
+    "plots": [
+      "fig1_severity_distribution.png",
+      "fig2_severity_weather_heatmap.png",
+      "fig3_dbscan_clusters.png",
+      "fig4_confusion_matrix.png",
+      "fig5_feature_importances.png",
+      "fig6_roc_curves.png",
+      "fig7_learning_curve.png",
+      "fig8_risk_map.png",
+      "fig9_model_comparison.png"
+    ],
+    "tables": [
+      "ari_results.csv",
+      "classification_report.csv",
+      "cluster_summary.csv",
+      "confusion_matrix.csv",
+      "cross_validation_results.csv",
+      "dataset_overview.csv",
+      "feature_importances.csv",
+      "hyperparameters.csv",
+      "metrics_summary.csv",
+      "model_comparison.csv",
+      "severity_distribution.csv",
+      "weather_severity_crosstab.csv"
+    ],
+    "metrics": [
+      "ari_metrics.json",
+      "classification_metrics.json",
+      "clustering_metrics.json",
+      "model_comparison.json",
+      "roc_auc_scores.json"
+    ]
+  }
+}

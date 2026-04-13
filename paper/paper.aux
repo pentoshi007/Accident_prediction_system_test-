@@ -1,0 +1,110 @@
+\relax 
+\citation{b1}
+\citation{b2}
+\citation{b3}
+\citation{b4}
+\citation{b6}
+\citation{b8}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Review of Literature}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Spatial analysis of accident locations}{1}{}\protected@file@percent }
+\citation{b9}
+\citation{b10}
+\citation{b11}
+\citation{b14}
+\citation{b16}
+\citation{b18}
+\citation{b19}
+\citation{b20}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Machine learning for severity prediction}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Combined spatial and predictive approaches}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {III}Research Gap}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Methodology}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Dataset}{2}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Dataset Overview}}{2}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:dataset_overview}{{I}{2}{}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Severity Class Distribution}}{2}{}\protected@file@percent }
+\newlabel{tab:severity_dist}{{II}{2}{}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Data preprocessing}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}System architecture}{2}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces System architecture showing the pipeline from raw data to risk map output. DBSCAN cluster IDs are fed into the Random Forest as a spatial feature.}}{2}{}\protected@file@percent }
+\newlabel{fig:architecture}{{1}{2}{}{figure.1}{}}
+\citation{b21}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}DBSCAN spatial clustering}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces DBSCAN Clustering Configuration}}{3}{}\protected@file@percent }
+\newlabel{tab:dbscan_params}{{III}{3}{}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-E}}Random Forest classification}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Random Forest Hyperparameters}}{3}{}\protected@file@percent }
+\newlabel{tab:rf_params}{{IV}{3}{}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Feature Set for Classification (17 Features)}}{3}{}\protected@file@percent }
+\newlabel{tab:features}{{V}{3}{}{table.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-F}}Accident Risk Index (ARI)}{3}{}\protected@file@percent }
+\newlabel{eq:ari}{{1}{3}{}{equation.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VI}{\ignorespaces Environmental Risk Scores by Weather Condition}}{3}{}\protected@file@percent }
+\newlabel{tab:env_scores}{{VI}{3}{}{table.6}{}}
+\citation{b2}
+\citation{b11}
+\newlabel{eq:tiers}{{2}{4}{}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-G}}Evaluation metrics}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}Results and Discussion}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Exploratory data analysis}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Severity distribution shown as (a) bar chart with counts and (b) pie chart with percentages. Slight injuries dominate at 84.56\%.}}{4}{}\protected@file@percent }
+\newlabel{fig:severity_dist}{{2}{4}{}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Accident frequency by hour of day. Peaks coincide with morning and evening commuting periods.}}{4}{}\protected@file@percent }
+\newlabel{fig:hourly}{{3}{4}{}{figure.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Accident frequency by day of week. Friday shows the highest count.}}{4}{}\protected@file@percent }
+\newlabel{fig:daily}{{4}{4}{}{figure.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VII}{\ignorespaces Weather Condition vs. Severity Cross-tabulation}}{4}{}\protected@file@percent }
+\newlabel{tab:weather_severity}{{VII}{4}{}{table.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Heatmap of severity distribution across weather conditions. Cell values show raw counts.}}{4}{}\protected@file@percent }
+\newlabel{fig:weather_heatmap}{{5}{4}{}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-B}}DBSCAN clustering results}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Spatial distribution of 12,316 accident records, colored by DBSCAN cluster assignment. Red X markers indicate cluster centroids.}}{5}{}\protected@file@percent }
+\newlabel{fig:dbscan}{{6}{5}{}{figure.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {VIII}{\ignorespaces DBSCAN Cluster Summary}}{5}{}\protected@file@percent }
+\newlabel{tab:cluster_summary}{{VIII}{5}{}{table.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-C}}Classification performance}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {IX}{\ignorespaces Per-class Classification Report}}{5}{}\protected@file@percent }
+\newlabel{tab:class_report}{{IX}{5}{}{table.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Confusion matrix for the Random Forest classifier on the test set. The model predicts Slight Injury for nearly all inputs.}}{5}{}\protected@file@percent }
+\newlabel{fig:confusion}{{7}{5}{}{figure.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {X}{\ignorespaces Top 10 Feature Importances}}{5}{}\protected@file@percent }
+\newlabel{tab:top_features}{{X}{5}{}{table.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces ROC curves (one-vs-rest) for three severity classes. Macro-average AUC = 0.7388.}}{6}{}\protected@file@percent }
+\newlabel{fig:roc}{{8}{6}{}{figure.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Random Forest feature importances ranked by contribution. Hour of day is the strongest predictor.}}{6}{}\protected@file@percent }
+\newlabel{fig:feat_imp}{{9}{6}{}{figure.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-D}}Comparative analysis}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Learning curve for the Random Forest classifier. The persistent gap between training and validation scores indicates overfitting.}}{6}{}\protected@file@percent }
+\newlabel{fig:learning}{{10}{6}{}{figure.10}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {XI}{\ignorespaces Five-fold Stratified Cross-validation Results}}{6}{}\protected@file@percent }
+\newlabel{tab:cv_results}{{XI}{6}{}{table.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {XII}{\ignorespaces Comparative Performance of Classification Models}}{6}{}\protected@file@percent }
+\newlabel{tab:model_comparison}{{XII}{6}{}{table.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-E}}Accident Risk Index results}{6}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {XIII}{\ignorespaces Accident Risk Index Results per Cluster}}{7}{}\protected@file@percent }
+\newlabel{tab:ari_results}{{XIII}{7}{}{table.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Accident black spot risk map. Circle size is proportional to incident count; color indicates ARI score (green = low, red = high).}}{7}{}\protected@file@percent }
+\newlabel{fig:risk_map}{{11}{7}{}{figure.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Severity composition by cluster, showing the proportion of Slight, Serious, and Fatal injuries within each cluster.}}{7}{}\protected@file@percent }
+\newlabel{fig:cluster_sev}{{12}{7}{}{figure.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-F}}Discussion}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Conclusion and Future Work}{7}{}\protected@file@percent }
+\bibcite{b1}{1}
+\bibcite{b2}{2}
+\bibcite{b3}{3}
+\bibcite{b4}{4}
+\bibcite{b6}{5}
+\bibcite{b8}{6}
+\bibcite{b9}{7}
+\bibcite{b10}{8}
+\bibcite{b11}{9}
+\bibcite{b14}{10}
+\bibcite{b16}{11}
+\bibcite{b18}{12}
+\bibcite{b19}{13}
+\bibcite{b20}{14}
+\bibcite{b21}{15}
+\@writefile{toc}{\contentsline {section}{References}{8}{}\protected@file@percent }
+\gdef \@abspage@last{8}

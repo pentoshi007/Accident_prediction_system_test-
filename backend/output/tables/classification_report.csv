@@ -1,0 +1,6 @@
+Class,Precision,Recall,F1-Score,Support
+Slight,0.8473,0.9986,0.9167,2084.0
+Serious,0.625,0.0143,0.028,349.0
+Fatal,0.0,0.0,0.0,31.0
+Macro Avg,0.4908,0.3376,0.3149,2464.0
+Weighted Avg,0.8052,0.8466,0.7793,2464.0

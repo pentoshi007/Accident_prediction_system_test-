@@ -1,0 +1,14 @@
+Metric,Value
+Test Accuracy,0.8465909090909091
+Train Accuracy,1.0
+Precision (macro),0.49077090119435396
+Precision (weighted),0.8051642346863235
+Recall (macro),0.3376290360723537
+Recall (weighted),0.8465909090909091
+F1-Score (macro),0.3149170975291732
+F1-Score (weighted),0.7793272134644806
+Cohen's Kappa,0.019793727636287062
+Matthews Corr. Coeff.,0.07488007387054438
+Log Loss,0.4471230827107006
+CV Accuracy (mean +/- std),0.8476 +/- 0.0010
+CV F1 macro (mean +/- std),0.3251 +/- 0.0112

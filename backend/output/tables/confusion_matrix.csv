@@ -1,0 +1,4 @@
+,Pred: Slight,Pred: Serious,Pred: Fatal
+True: Slight,2081,3,0
+True: Serious,344,5,0
+True: Fatal,31,0,0

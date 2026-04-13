@@ -1,0 +1,7 @@
+Model,Accuracy,Precision,Recall,F1-Score,Cohen's Kappa,Training Time (s)
+Decision Tree,0.737,0.3517,0.3533,0.3521,0.0684,0.027
+Random Forest,0.8466,0.4908,0.3376,0.3149,0.0198,0.24
+Naive Bayes,0.8429,0.359,0.3346,0.3104,0.0055,0.003
+K-Nearest Neighbors,0.8385,0.312,0.332,0.3076,-0.0063,0.0
+SVM (RBF),0.5,0.3546,0.4077,0.3062,0.0464,13.565
+Logistic Regression,0.4363,0.3603,0.4461,0.2909,0.0425,0.25

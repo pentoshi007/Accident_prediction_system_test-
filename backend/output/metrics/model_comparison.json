@@ -1,0 +1,56 @@
+[
+  {
+    "Model": "Random Forest",
+    "Accuracy": 0.8466,
+    "Precision": 0.4908,
+    "Recall": 0.3376,
+    "F1-Score": 0.3149,
+    "Cohen's Kappa": 0.0198,
+    "Training Time (s)": 0.24
+  },
+  {
+    "Model": "Decision Tree",
+    "Accuracy": 0.737,
+    "Precision": 0.3517,
+    "Recall": 0.3533,
+    "F1-Score": 0.3521,
+    "Cohen's Kappa": 0.0684,
+    "Training Time (s)": 0.027
+  },
+  {
+    "Model": "K-Nearest Neighbors",
+    "Accuracy": 0.8385,
+    "Precision": 0.312,
+    "Recall": 0.332,
+    "F1-Score": 0.3076,
+    "Cohen's Kappa": -0.0063,
+    "Training Time (s)": 0.0
+  },
+  {
+    "Model": "Logistic Regression",
+    "Accuracy": 0.4363,
+    "Precision": 0.3603,
+    "Recall": 0.4461,
+    "F1-Score": 0.2909,
+    "Cohen's Kappa": 0.0425,
+    "Training Time (s)": 0.25
+  },
+  {
+    "Model": "Naive Bayes",
+    "Accuracy": 0.8429,
+    "Precision": 0.359,
+    "Recall": 0.3346,
+    "F1-Score": 0.3104,
+    "Cohen's Kappa": 0.0055,
+    "Training Time (s)": 0.003
+  },
+  {
+    "Model": "SVM (RBF)",
+    "Accuracy": 0.5,
+    "Precision": 0.3546,
+    "Recall": 0.4077,
+    "F1-Score": 0.3062,
+    "Cohen's Kappa": 0.0464,
+    "Training Time (s)": 13.565
+  }
+]

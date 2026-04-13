@@ -1,0 +1,9 @@
+Parameter,Value
+n_estimators,200
+max_depth,20
+class_weight,balanced
+test_size,0.2
+random_state,42
+DBSCAN eps (rad),0.045
+DBSCAN min_samples,15
+DBSCAN metric,haversine
