@@ -19,7 +19,8 @@ from routes.upload import upload_bp
 
 def create_app():
     app = Flask(__name__)
-    CORS(app)
+    origins = os.getenv("CORS_ORIGINS", "*")
+    CORS(app, resources={r"/api/*": {"origins": [o.strip() for o in origins.split(",")] if origins != "*" else "*"}})
 
     app.register_blueprint(clusters_bp)
     app.register_blueprint(predictions_bp)
